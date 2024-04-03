@@ -7,7 +7,7 @@ export default function SelfAssessmentScreen({ navigation }) {
   const handleNext = () => {
     if (rating !== null) {
       console.log("Rating selected:", rating);
-      navigation.navigate("SelfAssessmentScreen2");
+      navigation.navigate("SelfAssessmentScreen3");
     } else {
       alert("Please select a rating before proceeding.");
     }
@@ -15,7 +15,9 @@ export default function SelfAssessmentScreen({ navigation }) {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.question}>Question 1: How was your day?</Text>
+      <Text style={styles.question}>
+        How would you rate your mental health?
+      </Text>
       <View style={styles.ratingContainer}>
         <TouchableOpacity
           style={[
