@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
 
-export default function SelfAssessmentScreen({ navigation }) {
+export default function SelfAssessmentScreen2({ navigation }) {
   const [rating, setRating] = useState(null);
 
   const handleNext = () => {

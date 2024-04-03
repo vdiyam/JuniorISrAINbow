@@ -10,13 +10,13 @@ import {
 import CustomButton from "../components/CustomButton";
 import { ButtonType } from "../components/CustomButton";
 
-export default function SelfAssesmentScreen({ navigation }) {
+export default function SelfAssesmentScreen8({ navigation }) {
   const [rating, setRating] = useState(null);
 
   const handleNext = () => {
     if (rating !== null) {
       // If rating is selected, navigate to the next screen
-      navigation.navigate("SelfAssessmentScreen2");
+      navigation.navigate("SelfAssessmentScreen9");
     } else {
       // If rating is not selected, show an alert or message prompting user to select a rating
       alert("Please select a rating before proceeding.");
